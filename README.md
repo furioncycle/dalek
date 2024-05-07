@@ -1,10 +1,11 @@
 # Dalek
 
-A data oriented audio engine for `Dark Rain`
+An experimental data oriented distributed audio engine
 
 ## Goals
 
-- Follows `Tigerstyle`
+- Follows [Tigerstyle](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md)
+- Follows [Local First](https://www.inkandswitch.com/local-first/)
 - 100% zig
 - Data oriented
 - Deterministic
