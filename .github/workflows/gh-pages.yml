@@ -14,12 +14,14 @@ jobs:
 
       - name: Setup Zig
         uses: goto-bus-stop/setup-zig@v2
+        working-directory: ./docs 
         with:
           version: 0.12.0-dev.3381+7057bffc1
           cache: true
           
       - name: Restore cache
         uses: actions/cache/restore@v3
+        working-directory: ./docs
         with:
           path: |
             ~/.cache/zig
@@ -27,10 +29,12 @@ jobs:
           key: zine-${{hashFiles('build.zig.zon')}}          
 
       - name: Build
+        working-directory: ./docs
         run: zig build --summary all
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        working-directory: ./docs
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -38,6 +42,7 @@ jobs:
           
       - name: Save Cache
         uses: actions/cache/save@v3
+        working-directory: ./docs
         with:
           path: |
             ~/.cache/zig
