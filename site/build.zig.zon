@@ -1,0 +1,11 @@
+.{
+    .name = "Zine Official Website",
+    .version = "0.0.0",
+    .dependencies = .{
+        .zine = .{
+            .url = "git+https://github.com/klumme/zine.git#88406bdc008d7554c5b2a01e5ce0d1d7c33d3ed3",
+            .hash = "12209c170ece4eb80f8598319df0b3d10109230c5ceaa52512e6465854e9fc1c6a48",
+        },
+    },
+    .paths = .{"."},
+}
