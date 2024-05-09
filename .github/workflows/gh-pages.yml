@@ -1,8 +1,5 @@
 name: github pages
 
-defaults:
-  run:
-    working-directory: ./docs
 on:
   push:
     branches:
@@ -36,7 +33,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/zig-out
+          publish_dir: ./zig-out
           
       - name: Save Cache
         uses: actions/cache/save@v3
