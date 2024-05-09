@@ -1,9 +1,9 @@
 const std = @import("std");
-
+const zine = @import("zine");
 // Although this function looks imperative, note that its job is to
 // declaratively construct a build graph that will be executed by an external
 // runner.
-pub fn build(b: *std.Build) void {
+pub fn build(b: *std.Build) !void {
     // Standard target options allows the person running `zig build` to choose
     // what target to build for. Here we do not override the defaults, which
     // means any target is allowed, and the default is native. Other options
@@ -88,4 +88,14 @@ pub fn build(b: *std.Build) void {
     const test_step = b.step("test", "Run unit tests");
     test_step.dependOn(&run_lib_unit_tests.step);
     test_step.dependOn(&run_exe_unit_tests.step);
+
+    try zine.addWebsite(b, .{
+        .title = "Dalek audio engine",
+        .host_url = "https://dalek.audio",
+        .layouts_dir_path = "docs/layouts",
+        .content_dir_path = "docs/content",
+        .static_dir_path = "docs/static",
+    });
+
+    zine.scriptyReferenceDocs(b, "docs/content/documentation/scripty/index.md");
 }
