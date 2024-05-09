@@ -7,7 +7,7 @@
     // This field is optional.
     // This is currently advisory only; Zig does not yet do anything
     // with this value.
-    //.minimum_zig_version = "0.11.0",
+    .minimum_zig_version = "0.12.0",
 
     // This field is optional.
     // Each dependency must either provide a `url` and `hash`, or a `path`.
@@ -15,6 +15,10 @@
     // Once all dependencies are fetched, `zig build` no longer requires
     // internet connectivity.
     .dependencies = .{
+        .zine = .{
+            .url = "git+https://github.com/furioncycle/zine.git#9ead5f27dca450e389f81a0d93f5782bdd9dc111",
+            .hash = "1220e02a2c376c691f484fbbf8862621cb83da313c00683157236acd2457c6fe8e3b",
+        },
         // See `zig fetch --save <url>` for a command-line interface for adding dependencies.
         //.example = .{
         //    // When updating this field to a new URL, be sure to delete the corresponding
@@ -56,7 +60,7 @@
         // better to explicitly list the files and directories instead, to insure that
         // fetching from tarballs, file system paths, and version control all result
         // in the same contents hash.
-        "",
+        ".",
         // For example...
         //"build.zig",
         //"build.zig.zon",
