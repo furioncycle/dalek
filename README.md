@@ -2,6 +2,8 @@
 
 An experimental data oriented distributed audio engine
 
+[Dalek blog](https://furioncycle.github.io/dalek/)
+
 ## Goals
 
 - Follows [Tigerstyle](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md)
