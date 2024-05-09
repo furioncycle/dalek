@@ -3,8 +3,8 @@
     .version = "0.0.0",
     .dependencies = .{
         .zine = .{
-            .url = "git+https://github.com/klumme/zine.git#88406bdc008d7554c5b2a01e5ce0d1d7c33d3ed3",
-            .hash = "12209c170ece4eb80f8598319df0b3d10109230c5ceaa52512e6465854e9fc1c6a48",
+            .url = "git+https://github.com/furioncycle/zine.git#9ead5f27dca450e389f81a0d93f5782bdd9dc111",
+            .hash = "1220e02a2c376c691f484fbbf8862621cb83da313c00683157236acd2457c6fe8e3b",
         },
     },
     .paths = .{"."},
