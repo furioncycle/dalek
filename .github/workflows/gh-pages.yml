@@ -36,7 +36,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./zig-out
+          publish_dir: .docs/zig-out
           
       - name: Save Cache
         uses: actions/cache/save@v3
