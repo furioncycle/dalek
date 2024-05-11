@@ -20,6 +20,6 @@ This will be the ramblings of the design and production of [Dalek](https://githu
 I will be explaining more of these in detail later on in posts. 
 
 1. Learning about audio programming development
-1. Getting better at Zig - &#128498;
+1. Getting better at Zig -> &#128498; &#128498; &#128498;
 1. Following a more [Data Oriented](https://vimeo.com/649009599) design
 1. Simplicity

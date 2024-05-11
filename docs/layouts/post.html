@@ -1,0 +1,26 @@
+<extend template="base.html" />
+<title id="title" var="$page.title"></title>
+
+<head id="head">
+</head>
+
+<div id="content" class="posts">
+  <h1 class="center" var="$page.title"></h1>  
+  <hr>
+  <div class="center" var="$page.content"></div>
+
+  <hr>
+  <div id="prev-next">
+		<span if="$page.prevPage()">
+			<a href="$if.permalink()">← <span var="$if.title"></span></a>
+		</span>
+		<span if="$page.hasPrev().and($page.hasNext())">&nbsp; • &nbsp;</span>
+		<span if="$page.nextPage()">
+			<a href="$if.permalink()"><span var="$if.title"></span> →</a>
+		</span>
+		<small if="$page.hasPrev().or($page.hasNext())">&nbsp; or &nbsp;</small>
+		<small>
+			<a href="/posts">Back to Posts</a>
+		</small>
+	</div>
+</div>

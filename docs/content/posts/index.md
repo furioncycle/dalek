@@ -1,0 +1,13 @@
+---
+{
+  .title = "Posts",
+  .author = "Angel Marquez",
+  .description = "",
+  .date = @date("2020-07-12T00:00:00"),
+  .layout = "posts.html",
+  .draft = false,
+}
+---
+
+# Posts
+
