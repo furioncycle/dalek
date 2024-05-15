@@ -24,3 +24,11 @@ cd dalek
 nix flake develop
 zig build
 ```
+Without `nix` you need to make sure to grab the `latest` zig build
+
+```
+git clone https://github.com/furioncycle/dalek.git
+cd dalek
+zig build
+````
+
