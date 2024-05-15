@@ -1,0 +1,16 @@
+---
+{
+  .title = "Designing Dalek",
+  .date = @date("2020-07-06T00:00:00"),
+  .author = "Angel Marquez",
+  .draft = false,
+  .layout = "post.html",
+  .tags = [],
+}
+---
+
+## What is an audio engine
+
+## Internal structure
+
+### Graphs & Arrays

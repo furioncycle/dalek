@@ -1,0 +1,14 @@
+<extend template="base.html" />
+
+<title id="title" var="$page.title"></title>
+
+<head id="head">
+</head>
+
+<div id="content" class="posts">
+    <div class="center" var="$page.content"></div>
+    <div loop="$page.subpages()">
+      <a href="$loop.it.permalink()" var="$loop.it.title"></a>
+      <span class="sub-title" var="$loop.it.date.format('January 02, 2006')"> by Angel Marquez</span><div class="chip info" var="$loop.it.wordCount().div(220).plus(1)">   minute read</div>
+    </div>
+</div>
