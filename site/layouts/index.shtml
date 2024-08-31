@@ -6,8 +6,8 @@
   <meta name="author" content="Angel Marquez" >
   <meta name="dcterms.date" content="2024-08-30" >
   <title>Dalek - Audio Engine</title>
-  <link rel="stylesheet" href="$site.asset('reset.css').link()" >
-  <link rel="stylesheet" href="$site.asset('index.css').link()" >
+  <link rel="stylesheet" type="text/css" href="$site.asset('reset.css').link()" >
+  <link rel="stylesheet" type="text/css" href="$site.asset('index.css').link()" >
 </head>
 <body>
 <table class="header">
@@ -26,7 +26,7 @@
 </table>
 <label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" > Debug mode</label>
   <div class="debug-grid"></div>
-  <script src="$site.asset('index.js').link()"></script>
+  <script type="application/javascript" src="$site.asset('index.js').link()"></script>
 	<div id="content">
 		<div id="page" :html="$page.content()"></div>
 	</div>
