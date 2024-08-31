@@ -11,8 +11,9 @@
 ># [Warning]($block.attrs('warning'))
 >Future me, I am sorry.  
 >This will break due to changes in:  
-> Architectural   
-> Visual  
+> Architecture
+> Visuals
+> knowledge gaps
 
 
 # What is Dalek?

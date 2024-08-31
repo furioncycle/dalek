@@ -2,7 +2,7 @@
 
 An experimental data oriented distributed audio engine
 
-[Dalek blog](https://furioncycle.github.io/dalek/)
+[Dalek site](https://furioncycle.github.io/dalek/)
 
 ## Goals
 
@@ -11,12 +11,11 @@ An experimental data oriented distributed audio engine
 - 100% zig
 - Data oriented
 - Deterministic
-- Zero Dependencies
 - Living documented design
 
-## Installing
+## Contributing to development
 
-Recommend using `Nix` and following zig `master`
+Recommend using `Nix` and following zig release `0.13.0`
 
 ```zig
 git clone https://github.com/furioncycle/dalek.git
@@ -24,11 +23,14 @@ cd dalek
 nix flake develop
 zig build
 ```
-Without `nix` you need to make sure to grab the `latest` zig build
 
+Without `nix` you need to make sure to grab the release `0.13.0` zig build
+
+### Building local site
+
+```zig
+cd dalek/site
+zig build serve
 ```
-git clone https://github.com/furioncycle/dalek.git
-cd dalek
-zig build
-````
 
+This will open a localhost

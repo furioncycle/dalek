@@ -11,19 +11,11 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Change if you need git info
-
+      
       - name: Setup Zig
-        uses: goto-bus-stop/setup-zig@v2
+        uses: mlugg/setup-zig@v1
         with:
-          cache: true
-          
-      - name: Restore cache
-        uses: actions/cache/restore@v3
-        with:
-          path: |
-            ~/.cache/zig
-            zig-cache
-          key: zine-${{hashFiles('build.zig.zon')}}          
+          version: 0.13.0
 
       - name: Build
         run: zig build --summary all
@@ -34,11 +26,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./zig-out
-          
-      - name: Save Cache
-        uses: actions/cache/save@v3
-        with:
-          path: |
-            ~/.cache/zig
-            zig-cache
-          key: zine-${{hashFiles('build.zig.zon')}}   
