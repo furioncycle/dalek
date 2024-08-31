@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head id="head">
+    <meta charset="UTF-8">
+	  <meta name="description" content="Dalek data oriented audio engine">
+	  <meta property="og:title" content="$page.title">
+	  <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+   
+    <title id="title"><super> - Dalek</title>
+    <link rel="stylesheet" type="text/css" href="$site.asset('index.css').link()">
+    <link rel="stylesheet" type="text/css" href="$site.asset('reset.css').link()">
+  </head>
+  <body class="">
+    <table class="header">
+      <tr>
+        <td colspan="2" rowspan="2" class="width-auto">
+          <h1 class="title">Dalek</h1>
+          <span class="subtitle">Data Oriented Audio Engine</span>
+        </td>
+        <th>Version</th>
+        <td class="width-min">v0.0.1</td>
+      </tr>
+      <tr>
+        <th>Updated</th>
+        <td class="width-min"><time style="white-space: pre;">2024-08-30</time></td>
+      </tr>
+    </table>
+    <div id="content">
+      <super>
+    </div>
+  </body>
+</html>

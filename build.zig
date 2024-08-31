@@ -89,13 +89,22 @@ pub fn build(b: *std.Build) !void {
     test_step.dependOn(&run_lib_unit_tests.step);
     test_step.dependOn(&run_exe_unit_tests.step);
 
-    try zine.addWebsite(b, .{
-        .title = "Dalek audio engine",
-        .host_url = "https://dalek.audio",
-        .layouts_dir_path = "docs/layouts",
-        .content_dir_path = "docs/content",
-        .static_dir_path = "docs/static",
-    });
+    // const site = b.option(bool, "site", "Build the site") orelse false;
+    // if (site) {
+    // zine.website(b, .{
+    //     .title = "Dalek audio engine",
+    //     .host_url = "https://dalek.audio",
+    //     .layouts_dir_path = "docs/layouts",
+    //     .content_dir_path = "docs/content",
+    //     .assets_dir_path = "docs/assets",
+    //     .static_assets = &.{},
+    //     .debug = true,
+    // });
 
-    zine.scriptyReferenceDocs(b, "docs/content/documentation/scripty/index.md");
+    // zine.scriptyReferenceDocs(
+    //     b,
+    //     "docs/content/docs/superhtml/scripty.smd",
+    //     "docs/content/docs/supermd/scripty.smd",
+    // );
+    // }
 }

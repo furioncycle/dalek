@@ -4,10 +4,16 @@
     .date = @date("2020-07-06T00:00:00"),
     .author = "Angel Marquez",
     .draft = false,
-    .layout = "index.html",
-    .tags = [],
+    .layout = "index.shtml",
 }  
 --- 
+
+># [Warning]($block.attrs('warning'))
+>Future me, I am sorry.  
+>This will break due to changes in:  
+> Architectural   
+> Visual  
+
 
 # What is Dalek?
 It is an audio engine for the sake of learning, such as a sandbox that I hope will turn into an audio engine for a future daw (Dark Rain).
