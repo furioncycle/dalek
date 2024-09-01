@@ -98,7 +98,7 @@ pub fn build(b: *std.Build) !void {
         .layouts_dir_path = "site/layouts",
         .content_dir_path = "site/content",
         .assets_dir_path = "site/assets",
-        .output_path_prefix = "dalek",
+        // .output_path_prefix = "dalek",
         .static_assets = &.{},
         .debug = true,
     });
