@@ -94,6 +94,7 @@ pub fn build(b: *std.Build) !void {
     zine.website(b, .{
         .title = "Dalek audio engine",
         .host_url = "https://dalek.audio",
+        .url_path_prefix = "dalek",
         .layouts_dir_path = "site/layouts",
         .content_dir_path = "site/content",
         .assets_dir_path = "site/assets",
